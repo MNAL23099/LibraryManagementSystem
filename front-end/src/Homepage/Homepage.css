@@ -1,0 +1,108 @@
+/* Homepage custom button style to match SignIn page */
+
+.homepage-btn {
+    width: 100%;
+    border-radius: 25px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    background: linear-gradient(90deg, var(--section-bg) 0%, var(--bg-1) 100%);
+    color: var(--text);
+    border: none;
+    box-shadow: 0 6px 20px 0 rgba(0,36,107,0.06);
+    padding: 0.7rem 0;
+    margin-top: 0.5rem;
+}
+.homepage-btn:hover {
+    background: linear-gradient(90deg, var(--accent-700) 0%, var(--accent) 100%);
+    color: var(--primary-700);
+    transform: translateY(-2px) scale(1.03);
+}
+
+#homepage_div_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    position: relative;
+    background: linear-gradient(rgba(244,241,234,0.72), rgba(244,241,234,0.72)), url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+#homepage_div_1::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(rgba(45,41,38,0.06), rgba(45,41,38,0.08));
+    pointer-events: none;
+}
+
+.homepage-center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.homepage-welcome {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--primary);
+    text-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.homepage-card-container {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 1.5rem;
+}
+
+    
+.homepage-card {
+    background: var(--card-bg);
+    color: var(--text);
+    border-radius: 1rem;
+    box-shadow: var(--shadow);
+    border: 1px solid rgba(0,36,107,0.12);
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
+    min-width: 220px;
+    max-width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.homepage-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.22);
+}
+.homepage-card h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+.homepage-card p {
+    font-size: 1rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+/* Remove old button div styles, now handled in cards */
+
+/* #div_1-button_1{
+    position: relative;
+    top: 100px;
+    right: 500px;
+}
+
+#div_1-button_2{
+    position: relative;
+    top: 100px;
+    right: 400px;
+} */

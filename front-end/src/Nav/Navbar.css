@@ -1,0 +1,24 @@
+#navbar_id{
+    position: relative;
+    background: linear-gradient(90deg, var(--primary) 0%, var(--primary-700) 100%);
+    box-shadow: var(--shadow);
+    padding: 0.6rem 1rem; /* reduced thickness */
+    min-height: 56px;
+}
+#navbar-propType {
+    color: #fff;
+    font-weight: 900;
+    font-size: 1.45rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+/* Place the go-back button at the top-right of the navbar and center vertically */
+#navbar_id .go-back-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+#navbar-propType { padding-top: 0; }

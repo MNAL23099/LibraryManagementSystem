@@ -1,0 +1,49 @@
+/* Library specific styles */
+.library-card {
+  width: 18rem;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  box-shadow: 0 4px 24px rgba(26,26,26,0.10);
+  border: 1px solid rgba(26,26,26,0.08);
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.library-card:hover { transform: translateY(-6px); box-shadow: 0 10px 34px rgba(26,26,26,0.15); }
+.library-card img { width:100%; height:140px; object-fit:cover; display:block; }
+.library-card .card-body { padding:1.2rem; text-align:center; }
+
+/* Ensure descriptive paragraph text inside library cards is readable */
+.library-card .card-body p {
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+
+/* Page hero image for Add/Edit/View pages */
+.component-hero{ display:flex; align-items:center; gap:1rem; margin-bottom:1rem; }
+.component-hero h2 { color: #fff; margin: 0; }
+.page-hero-img{ width:110px; height:80px; object-fit:cover; border-radius:8px; }
+
+/* Small polish for forms */
+.library-form-card{ max-width:420px; width:100%; border-radius:18px; }
+
+/* Make input/select text white inside library forms */
+.library-form-card .form-control,
+.library-form-card .form-select {
+  color: #fff;
+  background: var(--card-bg);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.library-form-card .form-control::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Dropdown items inside library forms (edit dropdown) */
+.library-form-card .dropdown-menu .dropdown-item {
+  color: #fff;
+  background: var(--card-bg);
+}
+.library-form-card .dropdown-menu .dropdown-item:hover {
+  background: rgba(255,255,255,0.03);
+}

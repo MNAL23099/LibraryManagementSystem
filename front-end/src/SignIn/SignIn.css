@@ -1,0 +1,31 @@
+#signIn-div_1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#form_1 {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Improved spacing for sign in form rows */
+#form_1 .mb-3 {
+    padding: 0.6rem 0;
+}
+
+#form_1 .form-control {
+    padding: 0.75rem 0.9rem;
+    border-radius: 8px;
+}
+
+#form_1 .form-text {
+    margin-top: 0.45rem;
+    color: var(--muted);
+}
+
+@media (max-width: 520px) {
+    #form_1 { padding: 1rem; }
+    #form_1 .form-control { padding: 0.7rem 0.75rem; }
+}

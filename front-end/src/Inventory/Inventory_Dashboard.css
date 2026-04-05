@@ -1,0 +1,121 @@
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    background:
+        linear-gradient(rgba(196, 176, 176, 0.45), rgba(134, 81, 81, 0.45)),
+        url(../../images/comp.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(6px) brightness(0.85) saturate(1.1);
+    opacity: 0.92;
+}
+
+.inventory-go-btn, .card .btn-primary {
+    background: linear-gradient(90deg, var(--section-bg) 0%, var(--bg-1) 100%);
+    color: var(--primary);
+    border: none;
+    font-weight: 700;
+    border-radius: 8px;
+
+}
+.inventory-go-btn:hover, .card .btn-primary:hover {
+    background: var(--primary);
+    color: var(--bg-1);
+}
+.inventory-go-btn:hover, .card .btn-primary:hover {
+    background: grey;
+    color: #fff;
+}
+/* Make card headings bold and card text normal */
+.card-title {
+    font-weight: bold;
+}
+.card-text {
+    font-weight: normal;
+}
+
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    flex-shrink: 0;
+    filter: brightness(0.85) contrast(1.1) saturate(1.3);
+    /* transition: filter 0.3s, box-shadow 0.3s; */
+    
+}
+.card-img-top:hover {
+    filter: brightness(1) contrast(1.1) saturate(1.3);
+    
+}
+#inventory-div_1 .card {
+    margin: 1rem;
+    border: 1px solid rgba(26,26,26,0.08);
+    color: var(--text);
+}
+
+/* Themed card body for neutral look */
+.themed-card-body {
+    background: linear-gradient(135deg, rgba(26,26,26,0.06) 20%, var(--section-bg) 100%);
+    color: var(--text);
+    font-weight: 700;
+    box-shadow: 0 6px 20px rgba(26,26,26,0.06);
+    border-top: 1px solid rgba(26,26,26,0.08);
+}
+
+#inventory-div_1 .card:hover {
+    box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+}
+
+/* Inventory dashboard */
+#inventory-div_1{
+    display: flex;
+    margin: 1rem;
+    
+}
+
+/* Add inventory page  */
+#addInventory-div_1{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+#inventory-div_1-form_1{
+    border: 1px solid rgb(14, 11, 11);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* Edit Inventory */
+#editInventory-div_1{
+    justify-content: center;
+    align-content: center;
+}
+
+/* Themed card body for gold and black look */
+.themed-card-body {
+    background: linear-gradient(135deg, #352e2e 30%, rgb(184, 64, 64) 100%);
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(180, 8, 8, 0.15);
+    border-top: 1px solid #a83232;
+}
+#labEngineer-dashboardCards .card{
+    margin: 1rem;
+    border: 1.5px solid rgb(155, 21, 21);
+    color: #fff;
+}
+#labEngineer-dashboardCards .card:hover{
+    box-shadow:0 8px 32px rgba(0,0,0,0.25);
+}
+/* ...existing code... */

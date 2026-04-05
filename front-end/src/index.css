@@ -1,0 +1,25 @@
+:root {
+    --bg-1: #1B262C; /* Deep Space main background */
+    --bg-2: #11181B;
+    --primary: #3282B8; /* Sky Blue for headings / icons */
+    --primary-700: #286c99;
+    --accent: #0F4C75; /* Atlantic Blue for secondary sections */
+    --accent-700: #0c3b5b;
+    --cta: #3282B8; /* CTA uses Sky Blue */
+    --cta-700: #245f8f;
+    --section-bg: #0F4C75; /* Atlantic Blue */
+    --card-bg: #122126; /* slightly lighter card background */
+    --text: #BBE1FA; /* Silver Grey for body text */
+    --muted: #9fb4c6;
+    --radius: 12px;
+    --shadow: 0 8px 30px rgba(0,0,0,0.6);
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--bg-1) 0%, var(--bg-2) 100%);
+    color: var(--text);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}  
